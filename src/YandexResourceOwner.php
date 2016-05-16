@@ -75,6 +75,18 @@ class YandexResourceOwner implements ResourceOwnerInterface
     {
         return $this->response['last_name'] ?: null;
     }
+    
+    /**
+     * Get avatar image URL.
+     *
+     * @return string|null
+     */
+    public function getAvatar()
+    {
+        if (!empty($this->response['default_avatar_id'])) {
+           return 'http://avatars.yandex.net/get-yapic/'.$this->response['default_avatar_id'].'/big?'.time();
+        }
+    }
 
     /**
      * {@inheritdoc}
