@@ -9,7 +9,7 @@ This package provides [Yandex](https://passport.yandex.ru) integration for [OAut
 ## Installation
 
 ```sh
-composer require aego/oauth2-yandex
+composer require sergey-sla/oauth2-yandex
 ```
 
 ## Usage
